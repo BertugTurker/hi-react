@@ -1,13 +1,21 @@
 import './App.css';
+import User from "./compo/User";
 
-const name = "bertuğ"
-const surname = "türker"
-const isExist = true
 
 function App() {
   return (
     <>
-      <h1> {isExist ? `exist ${name[0]} ${surname}` : "giriş yok" } </h1>
+    <User
+    name="bertug"
+    surname= "turk"
+    //age= "32"
+    isExist={true}
+    friends= {["murat", "baris", "melo"]}
+    adress = {{
+      title: "Maltepe",
+      zip: 34867
+    }}
+    />
     </>
   );
 }
