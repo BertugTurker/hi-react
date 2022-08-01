@@ -1,7 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import Count from "./compo/Counter";
+//import Inputing from "./compo/Inputing";
+//import Count from "./compo/Counter";
+import App from './App';
 //import App from './App';
 //import UseState from "./compo/Statecom";
 //import reportWebVitals from './reportWebVitals';
@@ -9,9 +11,9 @@ import Count from "./compo/Counter";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <Count />
-  </React.StrictMode>
+  <div>
+    <App />
+  </div>
 );
 
 // If you want to start measuring performance in your app, pass a function

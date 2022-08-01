@@ -1,21 +1,16 @@
 import './App.css';
-import User from "./compo/User";
+//import User from "./compo/User";
+import Count from "./compo/Counter";
+import { useState } from "react";
 
 
 function App() {
+
+  const [IsVisible, setIsVisible] = useState(true)
   return (
     <>
-    <User
-    name="bertug"
-    surname= "turk"
-    //age= "32"
-    isExist={true}
-    friends= {["murat", "baris", "melo"]}
-    adress = {{
-      title: "Maltepe",
-      zip: 34867
-    }}
-    />
+    {IsVisible && <Count />}
+    <button onClick={()=> setIsVisible(!IsVisible)}>toggle</button>
     </>
   );
 }
